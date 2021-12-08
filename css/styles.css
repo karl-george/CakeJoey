@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #fb8263;
+  --color-primary-dark: #bb3d1c;
+  --color-secondary: #fc9e85;
+  --color-headings: #fefefe;
+  --color-body: #fee6e0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: #fce2dd;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+}
