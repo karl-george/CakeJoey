@@ -42,6 +42,24 @@ h3 {
   margin-bottom: 2rem;
 }
 
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* Buttons */
 .btn {
   border: 0;
@@ -65,13 +83,13 @@ h3 {
 }
 
 /* Cake Card */
-.container {
-  max-width: 1440px;
+.card-container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
+.cake-grid {
+  justify-content: center;
 }
 
 .cake-card {
@@ -92,13 +110,6 @@ h3 {
 .cake-content {
   font-size: 2.5rem;
   margin-bottom: 5rem;
-}
-
-.cake-card .arrow {
-  background: white;
-  border-radius: 100%;
-  font-size: 4rem;
-  padding: 1rem;
 }
 
 .cake-card-image {
@@ -124,8 +135,10 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  /* TODO: Design a tablet layout for the cake cards */
   .cake-card {
     padding: 0 2rem 2rem 2rem;
+    max-width: 600px;
   }
 
   .card-arrow {
@@ -134,26 +147,16 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .card-container {
-    flex-direction: row;
-    margin: 0 auto;
-  }
   .cake-card {
-    padding: 0 4rem 4rem;
+    padding: 0 2rem 2rem;
     margin: 1rem;
-    position: relative;
   }
 
-  .card-1-title {
-    margin-top: 1rem;
-  }
-  .card-3-title {
-    margin-top: 1rem;
+  .card-title {
+    margin-top: -12rem;
   }
 
   .cake-card-image {
-    position: absolute;
-    right: 0;
-    top: -10rem;
+    transform: translateY(-130px);
   }
 }
