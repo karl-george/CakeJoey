@@ -36,6 +36,12 @@ h1 {
   font-size: 6rem;
 }
 
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
 /* Buttons */
 .btn {
   border: 0;
@@ -43,7 +49,7 @@ h1 {
   outline: 0;
   text-align: center;
   white-space: nowrap;
-  padding: 2rem 6rem;
+  padding: 4rem 6rem;
   border-radius: 40px;
   font-size: 2rem;
 }
@@ -56,4 +62,98 @@ h1 {
 .btn-dark:hover {
   /* TODO: Make sure hover effect doesn't clash with background colour of hero */
   background: #d95938;
+}
+
+/* Cake Card */
+.container {
+  max-width: 1440px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cake-card {
+  text-align: center;
+  border-radius: 20px;
+  padding: 0 4rem 4rem;
+  margin-bottom: 3rem;
+}
+
+.card-light {
+  background: var(--color-secondary);
+}
+
+.card-title {
+  margin-top: 1rem;
+}
+
+.cake-content {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.cake-card .arrow {
+  background: white;
+  border-radius: 100%;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.cake-card-image {
+  margin-top: 0rem;
+  max-width: 500px;
+}
+
+.card-arrow {
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+}
+
+.card-1-title {
+  margin-top: -1rem;
+}
+.card-3-title {
+  margin-top: -3rem;
+}
+
+.card-arrow:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+  .cake-card {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .card-arrow {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .cake-card {
+    padding: 0 4rem 4rem;
+    margin: 1rem;
+    position: relative;
+  }
+
+  .card-1-title {
+    margin-top: 1rem;
+  }
+  .card-3-title {
+    margin-top: 1rem;
+  }
+
+  .cake-card-image {
+    position: absolute;
+    right: 0;
+    top: -10rem;
+  }
 }
