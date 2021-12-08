@@ -23,10 +23,37 @@ img {
 }
 
 body {
-  color: #fce2dd;
+  color: var(--color-body);
   line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  color: var(--color-headings);
+  background: var(--color-primary);
+  font-size: 6rem;
 }
 
 /* Buttons */
 .btn {
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  text-align: center;
+  white-space: nowrap;
+  padding: 2rem 6rem;
+  border-radius: 40px;
+  font-size: 2rem;
+}
+
+.btn-dark {
+  background: var(--color-primary-dark);
+  color: var(--color-body);
+}
+
+.btn-dark:hover {
+  /* TODO: Make sure hover effect doesn't clash with background colour of hero */
+  background: #d95938;
 }
