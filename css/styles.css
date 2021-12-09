@@ -3,7 +3,8 @@
   --color-primary-dark: #bb3d1c;
   --color-secondary: #fc9e85;
   --color-headings: #fefefe;
-  --color-body: #fee6e0;
+  --color-body: #fde4e0;
+  --color-text-dark: #1c1d1d;
 }
 
 *,
@@ -34,6 +35,10 @@ h1 {
   color: var(--color-headings);
   background: var(--color-primary);
   font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
 }
 
 h3 {
@@ -158,5 +163,64 @@ h3 {
 
   .cake-card-image {
     transform: translateY(-130px);
+  }
+}
+
+/* Testimonials */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.dark-block {
+  background: var(--color-primary);
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  border-radius: 20px;
+  color: var(--color-text-dark);
+}
+
+.testimonial-heading {
+  font-size: 4rem;
+}
+
+.testimonial-image {
+  max-width: 300px;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.testimonial-name {
+  font-size: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial-card {
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .dark-block .grid {
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dark-block {
+    padding: 2rem 8rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dark-block {
+    padding: 2rem 16rem 8rem;
   }
 }
