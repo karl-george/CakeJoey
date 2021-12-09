@@ -173,6 +173,11 @@ h3 {
   margin: 0 auto;
 }
 
+.container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .dark-block {
   background: var(--color-primary);
   padding: 2rem;
@@ -208,19 +213,19 @@ h3 {
     max-width: 100%;
   }
 
-  .dark-block .grid {
+  .testimonal.dark-block .grid {
     gap: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .dark-block {
+  .testimonal.dark-block {
     padding: 2rem 8rem 8rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .dark-block {
+  .testimonal.dark-block {
     padding: 2rem 16rem 8rem;
   }
 }
@@ -284,5 +289,105 @@ h3 {
 @media screen and (min-width: 1024px) {
   .about-us-info {
     padding: 0 8rem;
+  }
+}
+
+/* Navbar */
+
+.nav {
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-list {
+  width: 100%;
+  margin: 0;
+}
+
+.icon {
+  width: 50px;
+}
+
+.icon-white {
+  color: white;
+}
+
+.pancakes {
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  border-bottom: 1px solid var(--color-primary-dark);
+  padding: 0.5rem 2rem;
+}
+
+.nav-item:last-of-type {
+  border-bottom: none;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible-expanded .collapsible-content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.brand-title {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.5rem;
+  transform: translateY(12px);
+  position: absolute;
+  margin-left: 1rem;
+}
+
+.nav-brand {
+  position: relative;
+}
+
+.nav-item > a {
+  transition: color 0.3s;
+}
+
+.nav-item > a:hover {
+  color: #fff;
+}
+
+.dark-block {
+  background: var(--color-primary);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-toggler {
+    display: none;
+  }
+  .nav-list {
+    width: auto;
+    display: flex;
+    font-size: 1.8rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav-item {
+    border: 0;
   }
 }
