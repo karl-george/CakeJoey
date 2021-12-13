@@ -47,6 +47,10 @@ h3 {
   margin-bottom: 2rem;
 }
 
+.heading-dark {
+  color: var(--color-text-dark);
+}
+
 /* Grids */
 
 .grid {
@@ -390,4 +394,40 @@ a {
   .nav-item {
     border: 0;
   }
+}
+
+/* Contact Us Form */
+
+textarea {
+  resize: none;
+  height: 12rem;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid var(--color-text-dark);
+  color: var(--color-text-dark);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+  width: 80%;
+}
+
+::placeholder {
+  color: var(--color-text-dark);
+}
+
+.input-group {
+  margin: 1rem auto;
+}
+
+.container-small {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form .btn {
+  padding: 2rem 8rem;
+  text-transform: uppercase;
 }
