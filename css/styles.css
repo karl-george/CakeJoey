@@ -431,3 +431,44 @@ textarea {
   padding: 2rem 8rem;
   text-transform: uppercase;
 }
+
+/* Shop Contact Details */
+
+.our-contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-text-dark);
+  font-size: 1.8rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+.detail-group {
+  margin: 1rem 0;
+}
+
+.location {
+  margin-left: -8rem;
+}
+
+.details-text {
+  margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .our-contact-details {
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .location {
+    margin-left: 0;
+  }
+
+  .details-text {
+    margin: 0 1rem;
+  }
+}
