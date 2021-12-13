@@ -476,3 +476,55 @@ textarea {
 .icon-group {
   margin-top: 2rem;
 }
+
+/* Hero */
+
+.hero-cake {
+  display: none;
+}
+
+.shop-heading {
+  padding: 1rem 1rem 6rem;
+}
+
+.shop-heading .btn {
+  margin-top: 1.5rem;
+  padding: 1.8rem 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-cake {
+    display: block;
+    background: white;
+    border-radius: 30px;
+    max-width: 450px;
+  }
+
+  .shop-heading {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+    width: 34rem;
+  }
+
+  .shop-heading-content {
+    width: 45rem;
+  }
+
+  .shop-heading .btn {
+    margin-top: 1.5rem;
+    padding: 1.8rem 6rem;
+  }
+
+  .hero-cake-img {
+    padding: 2rem;
+  }
+
+  .hero {
+    align-items: center;
+    justify-items: center;
+    padding: 3rem;
+  }
+}
