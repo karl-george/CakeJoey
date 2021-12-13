@@ -144,7 +144,6 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  /* TODO: Design a tablet layout for the cake cards */
   .cake-card {
     padding: 0 2rem 2rem 2rem;
     max-width: 600px;
@@ -471,4 +470,9 @@ textarea {
   .details-text {
     margin: 0 1rem;
   }
+}
+
+/* Footer */
+.icon-group {
+  margin-top: 2rem;
 }
