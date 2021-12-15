@@ -35,6 +35,7 @@ h1 {
   color: var(--color-headings);
   background: var(--color-primary);
   font-size: 6rem;
+  margin-top: -2rem;
 }
 
 h2 {
@@ -112,6 +113,10 @@ h3 {
   background: var(--color-secondary);
 }
 
+.card-dark {
+  background: var(--color-primary);
+}
+
 .card-title {
   margin-top: 1rem;
 }
@@ -141,6 +146,21 @@ h3 {
 
 .card-arrow:hover {
   transform: scale(1.15);
+}
+
+.product-title {
+  color: var(--color-text-dark);
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-content {
+  color: var(--color-text-dark);
+  text-align: center;
+  padding: 1rem;
+  width: 400px;
+  margin: 0 auto 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,6 +199,10 @@ h3 {
 .container-inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.testimonial {
+  margin-bottom: 5rem;
 }
 
 .dark-block {
@@ -237,6 +261,7 @@ h3 {
 .about-us-block {
   color: var(--color-text-dark);
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .about-us-info {
@@ -379,6 +404,10 @@ a {
   text-align: center;
 }
 
+.nav-toggler {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .nav-toggler {
     display: none;
@@ -439,7 +468,7 @@ textarea {
   justify-content: center;
   color: var(--color-text-dark);
   font-size: 1.8rem;
-  margin: 2rem auto;
+  margin: 8rem auto;
   text-align: center;
 }
 .detail-group {
@@ -505,12 +534,40 @@ textarea {
   }
 
   h1 {
-    font-size: 5.5rem;
-    width: 34rem;
+    font-size: 5rem;
+    width: 30rem;
   }
 
   .shop-heading-content {
-    width: 45rem;
+    width: 30rem;
+    font-size: 1.8rem;
+  }
+
+  .shop-heading .btn {
+    margin-top: 1.5rem;
+    padding: 1.8rem 6rem;
+  }
+
+  .hero-cake-img {
+    padding: 2rem;
+  }
+
+  .hero {
+    align-items: center;
+    justify-items: center;
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+    width: 30rem;
+  }
+
+  .shop-heading-content {
+    width: 40rem;
+    font-size: 1.8rem;
   }
 
   .shop-heading .btn {
