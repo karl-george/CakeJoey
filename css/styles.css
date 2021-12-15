@@ -126,6 +126,7 @@ h3 {
   border-radius: 20px;
   padding: 0 4rem 4rem;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .card-light {
@@ -179,7 +180,7 @@ h3 {
   color: var(--color-text-dark);
   text-align: center;
   padding: 1rem;
-  width: 400px;
+  width: 300px;
   margin: 0 auto 5rem;
 }
 
@@ -200,12 +201,17 @@ h3 {
   .cake-content {
     width: 45rem;
   }
+
+  .product-content {
+    width: 500px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .cake-card {
     padding: 0 2rem 2rem;
     margin: 1rem;
+    overflow: visible;
   }
 
   .card-title {
