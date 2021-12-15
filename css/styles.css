@@ -36,20 +36,38 @@ h1 {
   background: var(--color-primary);
   font-size: 6rem;
   margin-top: -2rem;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 5rem;
+  /* font-size: 5rem; */
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .heading-dark {
   color: var(--color-text-dark);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
 }
 
 /* Grids */
@@ -79,7 +97,7 @@ h3 {
   white-space: nowrap;
   padding: 4rem 6rem;
   border-radius: 40px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .btn-dark {
@@ -88,15 +106,16 @@ h3 {
 }
 
 .btn-dark:hover {
-  /* TODO: Make sure hover effect doesn't clash with background colour of hero */
   background: #d95938;
 }
 
-/* Cake Card */
-.card-container {
-  max-width: 1000px;
-  margin: 0 auto;
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
+
+/* Cake Card */
 
 .cake-grid {
   justify-content: center;
@@ -119,16 +138,17 @@ h3 {
 
 .card-title {
   margin-top: 1rem;
+  font-size: 3.5rem;
 }
 
 .cake-content {
-  font-size: 2.5rem;
   margin-bottom: 5rem;
+  width: 300px;
 }
 
 .cake-card-image {
   margin-top: 0rem;
-  max-width: 500px;
+  max-width: 200px;
 }
 
 .card-arrow {
@@ -166,11 +186,19 @@ h3 {
 @media screen and (min-width: 768px) {
   .cake-card {
     padding: 0 2rem 2rem 2rem;
-    max-width: 600px;
+    max-width: 700px;
   }
 
   .card-arrow {
     margin-bottom: 2rem;
+  }
+
+  .cake-card-image {
+    max-width: 250px;
+  }
+
+  .cake-content {
+    width: 45rem;
   }
 }
 
@@ -186,6 +214,17 @@ h3 {
 
   .cake-card-image {
     transform: translateY(-130px);
+    max-width: 500px;
+  }
+
+  .product-content {
+    width: 800px;
+    margin: 0 auto 12rem;
+  }
+
+  .cake-content {
+    font-size: 2rem;
+    width: 100%;
   }
 }
 
@@ -237,11 +276,14 @@ h3 {
 @media screen and (min-width: 768px) {
   .testimonial-card {
     padding: 2rem;
-    max-width: 100%;
   }
 
-  .testimonal.dark-block .grid {
+  .testimonial .grid {
     gap: 2rem;
+  }
+
+  .testimonial-heading {
+    font-size: 5rem;
   }
 }
 
@@ -261,7 +303,7 @@ h3 {
 .about-us-block {
   color: var(--color-text-dark);
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .about-us-info {
@@ -286,6 +328,8 @@ h3 {
   .about-us-block {
     justify-items: center;
     align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
   }
 
   .about-us-block .btn {
@@ -317,6 +361,27 @@ h3 {
 @media screen and (min-width: 1024px) {
   .about-us-info {
     padding: 0 8rem;
+  }
+
+  .about-us-heading {
+    font-size: 4rem;
+  }
+
+  .about-us-block .btn {
+    font-size: 2rem;
+  }
+
+  .about-us-content {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .about-us-block {
+    justify-items: center;
+    align-items: center;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -451,13 +516,27 @@ textarea {
 
 .container-small {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 6rem auto;
   text-align: center;
 }
 
 .contact-form .btn {
   padding: 2rem 8rem;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-small {
+    max-width: 800px;
+    margin: 8rem auto 0;
+    text-align: center;
+  }
 }
 
 /* Shop Contact Details */
@@ -490,6 +569,7 @@ textarea {
     font-size: 1.8rem;
     margin: 2rem auto;
     text-align: center;
+    margin-bottom: 10rem;
   }
 
   .location {
@@ -504,6 +584,12 @@ textarea {
 /* Footer */
 .icon-group {
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-group {
+    margin-top: 5rem;
+  }
 }
 
 /* Hero */
@@ -540,7 +626,7 @@ textarea {
 
   .shop-heading-content {
     width: 30rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .shop-heading .btn {
@@ -560,28 +646,8 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 5rem;
-    width: 30rem;
-  }
-
   .shop-heading-content {
     width: 40rem;
-    font-size: 1.8rem;
-  }
-
-  .shop-heading .btn {
-    margin-top: 1.5rem;
-    padding: 1.8rem 6rem;
-  }
-
-  .hero-cake-img {
-    padding: 2rem;
-  }
-
-  .hero {
-    align-items: center;
-    justify-items: center;
-    padding: 3rem;
+    font-size: 2rem;
   }
 }

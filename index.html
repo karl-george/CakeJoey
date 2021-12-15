@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fantastic cakes at fantastic prices" />
+    <meta
+      property="og:title"
+      content="Cakejoey - Fantastic cakes at fantastic prices"
+    />
+    <meta
+      property="og:description"
+      content="Cakejoey is a cake bakery in the middle of nowhere. We offer delicious cakes at affordable prices."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://cakejoey.com/cake.png" />
+    <meta property="og:url" content="http://cakejoey.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,14 +24,14 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>CakeJoey - Fantastic cakes at great prices</title>
+    <title>Cakejoey - Fantastic Cakes at Great Prices</title>
   </head>
   <body>
     <!-- Nav Bar -->
     <header>
       <div class="container dark-block">
         <div class="container-inner">
-          <nav class="nav collapsible">
+          <nav class="nav collapsible" id="home">
             <a aria-label="CakeJoey" class="nav-brand" href="#"
               ><img
                 class="icon icon-white pancakes"
@@ -27,23 +39,19 @@
               />
               <span class="brand-title">Cakejoey</span>
             </a>
-            <img
-              class="icon icon-white nav-toggler"
-              src="images/menu.png"
-              alt=""
-            />
+            <img class="icon icon-white nav-toggler" src="images/menu.png" />
             <ul class="list nav-list collapsible-content">
               <li class="nav-item">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#">Products</a>
+                <a href="#products">Products</a>
               </li>
               <li class="nav-item">
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a href="#">Contact Us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -65,7 +73,11 @@
               <button class="btn btn-dark">Shop Now</button>
             </div>
             <div class="hero-cake">
-              <img class="hero-cake-img" src="images/cake.png" alt="" />
+              <img
+                class="hero-cake-img"
+                src="images/cake.png"
+                alt="A picture of a cake"
+              />
             </div>
           </div>
         </div>
@@ -75,14 +87,14 @@
     <section>
       <div class="container">
         <div class="container-inner">
-          <h2 class="product-title">Our Products</h2>
+          <h2 class="product-title" id="products">Our Products</h2>
           <p class="product-content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
             id.
           </p>
         </div>
       </div>
-      <div class="card-container">
+      <div class="container-inner">
         <div class="cake-grid grid grid--1x3">
           <div class="cake-card card-light">
             <img
@@ -104,7 +116,7 @@
             <img
               class="cake-card-image"
               src="images/cake1.png"
-              alt="Cake with a cherry on top"
+              alt="Picture of a birthday cake"
             />
             <h3 class="card-title">Party Special</h3>
             <p class="cake-content">
@@ -120,7 +132,7 @@
             <img
               class="cake-card-image"
               src="images/cake3.png"
-              alt="Cake with a cherry on top"
+              alt="Picture of a flan"
             />
             <h3 class="card-title card-3-title">Sweet Treat</h3>
             <p class="cake-content">
@@ -138,9 +150,9 @@
     <section>
       <div class="container">
         <div class="about-us-block grid grid--1x2">
-          <img src="images/bakers.png" alt="" />
+          <img src="images/bakers.png" alt="Picture of a group of bakers" />
           <div class="about-us-info">
-            <h2 class="about-us-heading">About Us</h2>
+            <h2 class="about-us-heading" id="about">About Us</h2>
             <p class="about-us-content">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
               autem officiis reiciendis optio sit? Aspernatur recusandae sunt,
@@ -156,33 +168,35 @@
     <section>
       <div class="container">
         <div class="testimonial dark-block">
-          <h2 class="testimonial-heading">What Our Customers Say</h2>
-          <div class="grid grid--1x2">
-            <div class="testimonial-card">
-              <img
-                class="testimonial-image"
-                src="images/14.jpg"
-                alt="Picture of a smiling man"
-              />
-              <h3 class="testimonial-name">John Doe</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis cupiditate quia velit magnam? Eligendi obcaecati
-                repellendus impedit quasi voluptates assumenda?
-              </p>
-            </div>
-            <div class="testimonial-card">
-              <img
-                class="testimonial-image"
-                src="images/45.jpg"
-                alt="Picture of a smiling woman"
-              />
-              <h3 class="testimonial-name">Alice Kent</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis cupiditate quia velit magnam? Eligendi obcaecati
-                repellendus impedit quasi voluptates assumenda?
-              </p>
+          <div class="container-inner">
+            <h2 class="testimonial-heading">What Our Customers Say</h2>
+            <div class="grid grid--1x2">
+              <div class="testimonial-card">
+                <img
+                  class="testimonial-image"
+                  src="images/14.jpg"
+                  alt="Picture of a smiling man"
+                />
+                <h3 class="testimonial-name">John Doe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis cupiditate quia velit magnam? Eligendi obcaecati
+                  repellendus impedit quasi voluptates assumenda?
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  class="testimonial-image"
+                  src="images/45.jpg"
+                  alt="Picture of a smiling woman"
+                />
+                <h3 class="testimonial-name">Alice Kent</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis cupiditate quia velit magnam? Eligendi obcaecati
+                  repellendus impedit quasi voluptates assumenda?
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -191,7 +205,7 @@
     <!-- Contact Us -->
     <section>
       <div class="container-small">
-        <h2 class="heading-dark">Contact Us</h2>
+        <h2 class="heading-dark" id="contact">Contact Us</h2>
         <form class="contact-form">
           <div class="input-group">
             <input
